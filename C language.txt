@@ -1,0 +1,144 @@
+C Language is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, while a static type system prevents unintended operations. 
+
+C Language is a general-purpose programming language that is extremely popular, simple and flexible. 
+
+Variables are temporary memory locations allocated during execution of the program.
+
+A variable is a name assigned to a memory space that may be used to store a data value.
+
+Constant are Entities whose value does not during the execution of a program.
+
+Identifier are the name given to programming elements such as array, function, variable.
+
+String constant Collection of character enclosed by a double inverted comma.
+
+Operators are used to perform arithmetic and logical operations
+
+Scope of a variable is the part of the program where the variable may directly be accessible.
+
+A function is a group of statements that together perform a task.
+
+The basic and smallest unit of C program is token.
+
+Keywords or Reserve words are those words whose meaning is already explained to the compiler.
+
+In computer programming, a loop is a sequence of instructions that is repeated until a certain condition is reached. 
+
+There are 32 keywords & 45 operators that are used in c programming language.
+
+Modular programming is a program design technique in which a large program is divided into sub programs/ functions that are called modules, it improve maintainability of a program It makes software development, debug, modify, update faster and easy.
+
+printf() is a library function, the prototype of printf() is available in <stdio.h>, It returns a interger value, that describe how many charaters are printed on console.
+
+Full form of AT & T lab is Americal Telegraph and Telecommunication.
+
+Full form of ANSI is American National Standard Institute.
+
+Full form of ARM is Advance RISC(Reduced Instruction Set Computer) Machine.
+
+Condition is evaluated in C language, every condition returns 1 when it is TRUE, and return 0 when it is FALSE.
+
+An lvalue is a variable to which value can be assigned by assignment operator, this is located on the left side of assignment (=) operator, whereas rvalue is located on the right side of the assignment operator, and lvalue can not be a constant.
+
+In character array strlen() returns the number of characters, while sizeof() returns the number of occupied bytes by character array.
+
+If you have more than one condition to check on single variable or a single expression, then switch is better than if. 
+
+In C language, Header files contain the definitions and set of rules of the functions being used in the programs.
+
+Difference between static & global variables is that Global variables are variables which are defined outside the function Whereas, static global variables are private to the source file where they are defined and do not conflict with other variables in other source files which would have the same name.
+
+A memory leak occurs when programmers create a memory in the heap and forget to delete it.
+
+While(1) is an infinite loop which will run till a break statement occurs. 
+
+A pointer pointing to a dereferenced memory location is called dangling pointer.
+
+Null pointers generally do not point to a valid location. 
+
+In pass by value, changes made to the arguments in the called function will not be reflected in the calling function Whereas in pass by reference, the changes made to the arguments in the called function will be reflected in the calling function. 
+
+A pointer variable that contains the address of another pointer variable is called as a pointer on a pointer. 
+
+All the members of a structure can be accessed simultaneously but union can access only one member at a time.
+
+A stack is one form of a data structure. Data is stored in stacks using the FILO (First In Last Out) approach. At any particular instance, only the top of the stack is accessible, which means that in order to retrieve data that is stored inside the stack, those on the upper part should be extracted first. Storing data in a stack is also referred to as a PUSH, while data retrieval is referred to as a POP.
+
+When writing programs that will store and retrieve data in a file, it is possible to designate that file into different forms A sequential access file is such that data are saved in sequential order: one data is placed into the file after another To access a particular data within the sequential access file, data has to be read one data at a time, until the right one is reached.
+
+This refers to the process wherein a variable is assigned an initial value before it is used in the program Without initialization, a variable would have an unknown value, which can lead to unpredictable outputs when used in computations or other operations.
+
+Spaghetti programming refers to codes that tend to get tangled and overlapped throughout the program This unstructured approach to coding is usually attributed to lack of experience on the part of the programmer Spaghetti programing makes a program complex and analyzing the codes difficult, and so must be avoided as much as possible.
+
+Source codes are codes that were written by the programmer. It is made up of the commands and other English-like keywords that are supposed to instruct the computer what to do. However, computers would not be able to understand source codes Therefore, source codes are compiled using a compiler. The resulting outputs are object codes, which are in a format that can be understood by the computer processor. In C programming, source codes are saved with the file extension .C, while object codes are saved with the file extension.
+
+It is referred to as a terminating null character, and is used primarily to show the end of a string value.
+
+A local static variable is a variable whose lifetime doesn’t end with a function call where it is declared.
+
+Object Oriented Programming (OOP) is a programming paradigm where the complete software operates as a bunch of objects talking to each other. 
+
+An object is a collection of data and methods that operate on its data.
+
+An abstract class is a class which cannot be instantiated.
+
+OOPS stands for Object Oriented Programming System.
+
+Class is a logical encapsulation of data members and member functions in a single unit. 
+
+Encapsulation is an attribute of an object, and it contains all data which is hidden That hidden data can be restricted to the members of that class.
+
+Encapsulation means Binding data members and member functions in a single unit. 
+
+The idea of inheritance is simple, a class is based on another class and uses data and implementation of the other class.
+
+Inheritance is a mechanism (also an important component/feature of object oriented programming system) to inherit features from one to another class.
+
+Polymorphism provides ability to use same name for different purposes.
+
+Polymorphism means that some code or operations or objects behave differently in different contexts.
+
+Abstraction means hiding the implementation detail for simplicity.
+
+OOBS does not support inheritance and polymorphism, whereas OOPS supports class, object, polymorphism, inheritance, abstraction etc.
+
+Manipulators are the functions which can be used in conjunction with the insertion (<<) and extraction (>>) operators on an object. Examples are endl and setw.
+
+A constructor is a method used to initialize the state of an object, and it gets invoked at the time of object creation.
+
+A destructor is a method which is automatically called when the object is made of scope or destroyed.
+
+An inline function is a technique used by the compilers and instructs to insert complete body of the function wherever that function is used in the program source code.
+
+A virtual function is a member function of a class, and its functionality can be overridden in its derived class.
+
+A friend function is a friend of a class that is allowed to access to Public, private, or protected data in that same class. If the function is defined outside the class cannot access such information.
+
+Function overloading is a regular function, but it can perform different tasks.
+
+Operator overloading is a function where different operators are applied and depends on the arguments.
+
+The ternary operator is said to be an operator which takes three arguments.
+
+Finalize method helps to perform cleanup operations on the resources which are not currently used.
+
+The super keyword is used to invoke the overridden method, which overrides one of its superclass methods This keyword allows to access overridden methods and also to access hidden members of the superclass.
+
+Method overriding is a feature that allows a subclass to provide the implementation of a method that overrides in the main class.
+
+An interface is a collection of an abstract method. If the class implements an interface, it thereby inherits all the abstract methods of an interface.
+
+An exception is an event that occurs during the execution of a program.
+
+A compiler recognizes a token, and it cannot be broken down into component elements Keywords, identifiers, constants, string literals, and operators are examples of tokens.
+
+Overloading is static Binding, whereas Overriding is dynamic Binding Overloading is nothing but the same method with different arguments, and it may or may not return the equal value in the same class itself Overriding is the same method names with the same arguments and return types associated with the class and its child class.
+
+Access modifiers determine the scope of the method or variables that can be accessed from other various objects or classes. 
+
+
+
+
+
+
+

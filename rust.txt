@@ -1,0 +1,130 @@
+Rust is a programming language that offers the performance of C and C++ but with safeguards to stop developers shooting themselves in the foot,"To write extremely fast code with a low memory footprint previously meant using C or C++,However, using those languages in production code requires you to manage memory manually and know all the ways you might cause undefined behavior."
+
+Funcion:
+--Functions are pervasive in Rust code. You’ve already seen one of the most important functions in the language: the main function, which is the entry point of many programs. You’ve also seen the fn keyword, which allows you to declare new functions,Rust code uses snake case as the conventional style for function and variable names. In snake case, all letters are lowercase and underscores separate words. Here’s a program that contains an example function definition:
+fn main() {
+    println!("Hello, world!");
+
+    another_function();
+}
+
+fn another_function() {
+    println!("Another function");
+}.
+
+
+Function Parameters
+--Functions can also be defined to have parameters, which are special variables that are part of a function’s signature,When a function has parameters, you can provide it with concrete values for those parameters,Technically, the concrete values are called arguments, but in casual conversation, people tend to use the words parameter and argument interchangeably for either the variables in a function’s definition or the concrete values passed in when you call a function,The following rewritten version of another_function shows what parameters look like in Rust:
+fn main() {
+    another_function(5);
+}
+
+fn another_function(x: i32) {
+    println!("The value of x is: {}", x);
+}
+
+Keywords
+The Rust language has a set of keywords that are reserved for use by the language only, much as in other languages. Keep in mind that you cannot use these words as names of variables or functions,Most of the keywords have special meanings,and you’ll be using them to do various tasks in your Rust programs;a few have no current functionality associated with them but have been reserved for functionality that might be added to Rust in the future. You can find a list of the keywords in Appendix A.
+
+Every value in Rust is of a certain data type, which tells Rust what kind of data is being specified so it knows how to work with that data,We’ll look at two data type subsets: scalar and compound.
+
+Keep in mind that Rust is a statically typed language,which means that it must know the types of all variables at compile time,The compiler can usually infer what type we want to use based on the value and how we use it. 
+
+Scalar Types
+A scalar type represents a single value,Rust has four primary scalar types: integers, floating-point numbers, Booleans, and characters,You may recognize these from other programming languages.
+
+Integer Types
+An integer is a number without a fractional component,We used one integer type in Chapter 2, the u32 type, This type declaration indicates that the value it’s associated with should be an unsigned integer (signed integer types start with i, instead of u) that takes up 32 bits of space.
+
+Floating-Point Types
+Rust also has two primitive types for floating-point numbers, which are numbers with decimal points,Rust’s floating-point types are f32 and f64, which are 32 bits and 64 bits in size, respectively,The default type is f64 because on modern CPUs it’s roughly the same speed as f32 but is capable of more precision.
+
+Numeric Operations
+Rust supports the basic mathematical operations you’d expect for all of the number types: addition, subtraction, multiplication, division, and remainder.
+
+The Boolean Type
+As in most other programming languages, a Boolean type in Rust has two possible values: true and false,Booleans are one byte in size,The Boolean type in Rust is specified using bool,For example:
+fn main() {
+    let t = true;
+
+    let f: bool = false; 
+}.
+
+The Character Type
+So far we’ve worked only with numbers, but Rust supports letters too,Rust’s char type is the language’s most primitive alphabetic type, and the following code shows one way to use it,(Note that char literals are specified with single quotes, as opposed to string literals, which use double quotes).
+
+Compound Types
+Compound types can group multiple values into one type,Rust has two primitive compound types: tuples and arrays.
+
+The Tuple Type
+ Each position in the tuple has a type, and the types of the different values in the tuple don’t have to be the same,A tuple is a general way of grouping together a number of values with a variety of types into one compound type,Tuples have a fixed length: once declared, they cannot grow or shrink in size,We create a tuple by writing a comma-separated list of values inside parentheses.
+
+Understanding Ownership
+Ownership is Rust’s most unique feature, and it enables Rust to make memory safety guarantees without needing a garbage collector,Therefore, it’s important to understand how ownership works in Rust,In this chapter, we’ll talk about ownership as well as several related features: borrowing, slices, and how Rust lays data out in memory,
+--What Is Ownership,
+--Rust’s central feature is ownership,Although the feature is straightforward to explain, it has deep implications for the rest of the language,All programs have to manage the way they use a computer’s memory while running,Some languages have garbage collection that constantly looks for no longer used memory as the program runs; in other languages, the programmer must explicitly allocate and free the memory,Rust uses a third approach: memory is managed through a system of ownership with a set of rules that the compiler checks at compile time,None of the ownership features slow down your program while it’s running.
+
+Because ownership is a new concept for many programmers, it does take some time to get used to,The good news is that the more experienced you become with Rust and the rules of the ownership system, the more you’ll be able to naturally develop code that is safe and efficient,Keep at it!
+--When you understand ownership, you’ll have a solid foundation for understanding the features that make Rust unique. In this chapter, you’ll learn ownership by working through some examples that focus on a very common data structure: strings.
+
+Ownership Rules
+First, let’s take a look at the ownership rules,Keep these rules in mind as we work through the examples that illustrate them:
+--Each value in Rust has a variable that’s called its owner,
+--There can only be one owner at a time,
+--When the owner goes out of scope, the value will be dropped.
+
+Enums and Pattern Matching
+Enums allow you to define a type by enumerating its possible variants,First, we’ll define and use an enum to show how an enum can encode meaning along with data,Next, we’ll explore a particularly useful enum, called Option, which expresses that a value can be either something or nothing,Then we’ll look at how pattern matching in the match expression makes it easy to run different code for different values of an enum,Finally, we’ll cover how the if let construct is another convenient and concise idiom available to you to handle enums in your code,Enums are a feature in many languages, but their capabilities differ in each language,Rust’s enums are most similar to algebraic data types in functional languages, such as F#, OCaml, and Haskell.
+
+
+The match Control Flow Operator
+Rust has an extremely powerful control flow operator called match that allows you to compare a value against a series of patterns and then execute code based on which pattern matches,Patterns can be made up of literal values, variable names, wildcards, and many other things;The power of match comes from the expressiveness of the patterns and the fact that the compiler confirms that all possible cases are handled.Think of a match expression as being like a coin-sorting machine: coins slide down a track with variously sized holes along it, and each coin falls through the first hole it encounters that it fits into,In the same way, values go through each pattern in a match, and at the first pattern the value “fits,” the value falls into the associated code block to be used during execution.
+
+Modules
+Rust provides a powerful module system that can be used to hierarchically split code in logical units (modules), and manage visibility (public/private) between them,
+--A module is a collection of items: functions, structs, traits, impl blocks, and even other modules.
+
+Visibility
+By default, the items in a module have private visibility, but this can be overridden with the pub modifier,Only the public items of a module can be accessed from outside the module scope.
+--Struct visibility
+--Structs have an extra level of visibility with their fields,The visibility defaults to private, and can be overridden with the pub modifier,This visibility only matters when a struct is accessed from outside the module where it is defined, and has the goal of hiding information (encapsulation).
+
+
+
+use declaration
+The use declaration can be used to bind a full path to a new name, for easier access.
+
+super and self
+The super and self keywords can be used in the path to remove ambiguity when accessing items and to prevent unnecessary hardcoding of paths.
+
+
+File hierarchy
+Modules can be mapped to a file/directory hierarchy.
+
+Attribute
+An attribute is metadata applied to some module, crate or item,This metadata can be used to/for:
+
+--conditional compilation of code
+--set crate name, version and type (binary or library)
+--disable lints (warnings)
+--enable compiler features (macros, glob imports, etc)
+--link to a foreign library
+--mark functions as unit tests
+--mark functions that will be part of a benchmark.
+
+dead code
+The compiler provides a dead_code lint that will warn about unused functions,An attribute can be used to disable the lint.
+
+Crates
+The crate_type attribute can be used to tell the compiler whether a crate is a binary or a library (and even which type of library), and the crate_name attribute can be used to set the name of the crate,However, it is important to note that both the crate_type and crate_name attributes have no effect whatsoever when using Cargo, the Rust package manager.
+
+cfg
+Conditional compilation is possible through two different operators:
+--the cfg attribute: #[cfg(dot dot dot)] in attribute position
+--the cfg! macro:cfg!(dot dot dot) in boolean expressions
+--Both utilize identical argument syntax.
+
+
+
+
+

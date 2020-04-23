@@ -1,0 +1,133 @@
+PHP is a web language based on scripts that allow developers to dynamically create generated web pages.
+
+PHP is a general-purpose programming language originally designed for web development.
+
+PHP means Hypertext Preprocessor.
+
+PHP syntax resembles Perl and C.
+
+PEAR means "PHP Extension and Application Repository" It extends PHP and provides a higher level of programming for web developers.
+
+Variables are used for storing values such as numeric values, characters, character strings, or memory addresses so that they can be used in any part of the program.
+
+Loops in PHP are used to execute the same block of code a specified number of times.
+
+A string is a collection of characters and is one of the data types supported by PHP.
+
+PEAR is a framework and repository for reusable PHP components PEAR stands for PHP Extension and Application Repository It contains all types of PHP code snippets and libraries.
+
+The old name of PHP was Personal Home Page.
+
+PHP 5 presents many additional OOP (Object Oriented Programming) features.
+
+final is introduced in PHP5 Final class means that this class cannot be extended and a final method cannot be overridden.
+
+The scripting engine that powers PHP is called Zend Engine 2.
+
+PHP4 doesn't support oops concept and uses Zend Engine 1 PHP5 supports oops concept and uses Zend Engine 2.
+
+Popular Frameworks in PHP are CakePHP CodeIgniter Yii 2 Symfony Zend Framework etc.
+
+Echo in php output one or more string It is a language construct not a function So the use of parentheses is not required But if you want to pass more than one parameter to echo, the use of parentheses is required.
+
+PHP print output a string It is a language construct not a function So the use of parentheses is not required with the argument list Unlike echo, it always returns 1.
+
+Difference between echo and print is that Echo can output one or more string but print can only output one string and always returns 1.
+
+PHP constants are name or identifier that can't be changed during execution of the script PHP constants are defined in two ways: Using define() function Using const() function.
+
+PHP magic constants are predefined constants, which change based on their use.
+
+PHP data types are used to hold different types of data or values There are 8 primitive data types which are further categorized in 3 types Scalar types, Compound types, Special types.
+
+Different loops in PHP are For, while, do-while and for each.
+
+The PHP count() function is used to count total elements in the array, or something an object.
+
+The header() function is used to send a raw HTTP header to a client It must be called before sending the actual output For example, you can't print any HTML element before using this function.
+
+The isset() function checks if the variable is defined and not null.
+
+PHP supports variable length argument function It means you can pass 0, 1 or n number of arguments in function To do this, you need to use 3 ellipses (dots) before the argument name.
+
+An array is used to store multiple values in a single value It orders maps of pairs of keys and values It saves the collection of the data type.
+
+The difference between indexed and associative array is that indexed array holds elements in an indexed form which is represented by number starting from 0 and incremented by 1.
+
+The strlen() function is used to get the length of the string.
+
+There are two methods GET and POST to submit form in PHP.
+
+PHP allows you to include file so that page content can be reused again There are two ways to add the file in PHP include and require.
+
+Difference between require and include is that Require and include both are used to include a file, but if data is not found include sends warning whereas require sends Fatal error.
+
+PHP setcookie() function is used to set cookie with HTTP response Once the cookie is set, you can access it by $_COOKIE superglobal variable.
+
+PHP Engine creates a logical object to preserve data across subsequent HTTP requests, which is known as session.
+
+The main difference between session and cookie is that cookies are stored on user's computer in the text file format while sessions are stored on the server side.
+
+PHP fopen() function is used to open file or URL and returns resource.
+
+PHP provides various functions to read data from the file Different functions allow you to read all file data, read data line by line, and read data character by character.
+
+The unlink() function is used to delete a file in PHP.
+
+You should just run the PHP command line interface (CLI) and specify the file name of the script to be executed as follows.
+
+The move_uploaded_file() function is used to upload file in PHP.
+
+The readfile() function is used to download the file in PHP.
+
+The mail() function is used to send email in PHP.
+
+There are two methods to connect MySQL database with PHP Procedural and object-oriented style.
+
+The mysqli_connect() function is used to create a connection in PHP.
+
+The exit() function is used to stop the execution of PHP script.
+
+The PHP explode() function breaks a string into an array.
+
+The PHP split() function splits string into an array by regular expression.
+
+A persistent cookie is permanently stored in a cookie file on the browser's computer. By default, cookies are temporary and are erased if we close the browser.
+
+imagetypes() gives the image format and types supported by the current version of GD-PHP.
+
+PHP parser parses the PHP developed website from the opening to the closing tag.
+
+PHP and Javascript cannot directly interact since PHP is a server side language and Javascript is a client-side language However, we can exchange variables since PHP can generate Javascript code to be executed by the browser and it is possible to pass specific variables back to PHP via the URL.
+
+GD library is needed to execute image functions.
+
+imagetypes() gives the image format and types supported by the current version of GD-PHP.
+
+The functions are getimagesize() for size, imagesx() for width and imagesy() for height.
+
+To be able to display a human-readable result we use print_r().
+
+The most common and used way is to get data into a format supported by Excel.
+
+The function mysqli_num_rows() returns the number of rows in a result set.
+
+It is possible to use the dedicated function, is_numeric() to check whether it is a number or not.
+
+It is possible to use the dedicated function, ctype_alnum to check whether it is an alphanumeric value or not.
+
+If we want to check whether a variable has a value or not, it is possible to use the empty() function.
+
+The unset() function is dedicated for variable management It will make a variable undefined.
+
+The addslashes function enables us to escape data before storage into the database.
+
+The stripslashes function enables us to remove the escape characters before apostrophes in a string.
+
+
+
+
+
+
+
+

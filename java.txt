@@ -1,0 +1,285 @@
+﻿
+
+Types of Methods in java
+--Depending on whether a method is defined by the user, or available in standard library, there are two types of methods:
+--Standard Library Methods
+--User-defined Methods,
+--Standard Library Methods
+--The standard library methods are built-in methods in Java that are readily available for use,These standard libraries come along with the Java Class Library (JCL) in a Java archive (*.jar) file with JVM and JRE,
+--User defined Method
+--You can also define methods inside a class as per your wish,Such methods are called user-defined methods, How to create a userdefined method
+--Before you can use (call a method), you need to define it,
+--Here is how you define methods in Java,
+--public static void myMethod() {
+	System.out.println(“My Function called”);
+	}
+--Here, a method named myMethod() is defined,
+--You can see three keywords public, static and void before the function name,
+--The public keyword makes myMethod() method public. Public members can be accessed from outside of the class, To learn more, visit: Java public and private Modifiers,
+--The static keyword denotes that the method can be accessed without creating --the object of the class.
+
+
+advantages of methods
+--The main advantage is code reusability,You can write a method once, and use it multiple times,You do not have to rewrite the entire code each time, Think of it as, "write once, reuse multiple times"
+--Methods make code more readable and easier to debug,For example, getSalaryInformation() method is so readable, that we can know what this method will be doing than actually reading the lines of code that make this method,
+--You can give any name to a method,However, it is more conventional to name it after the tasks it performs. For example, calculateInterest, calculateArea, and so on.
+
+
+modifier in java defines access type whether the method is public, private and so on.
+ 
+static - If you use static keyword in a method then it becomes a static method, Static methods can be called without creating an instance of a class,
+--For example, the sqrt() method of standard Math class is static. Hence, we can directly call Math.sqrt() without creating an instance of Math class.
+ 
+returnType - A method can return a value
+--It can return native data types (int, float, double etc), native objects (String, Map, List etc), or any other built-in and user defined objects,
+--If the method does not return a value, its return type is void.
+
+call a Method,Now you defined a method, you need to use it ,For that, you have to call the method,Here's how,myMethod();.
+
+
+Java is a programming language and computing platform for creating and running software,However, Java is often used to refer Java programming language for simplicity, Java is a popular general-purpose programming language and computing platform, It is fast, reliable, and secure,According to Oracle, the company that owns Java, Java runs on 3 billion devices worldwide,Java was built with the philosophy of "write once, run anywhere" (WORA),The Java code (pure Java code and libraries) you write on one platform (operating system) will run on other platforms with no modification.
+
+Parameters (arguments) - Parameters are the values passed to a method,
+--You can pass any number of arguments to a method.
+
+JVM (Java Virtual Machine) is an abstract machine that enables your computer to run a Java program,To run Java, an abstract machine called Java Virtual Machine (JVM) is used. The JVM executes the Java bytecode,Then, the CPU executes the JVM,Since all JVMs works exactly the same, the same code works on other operating systems as well, making Java platform-independent.
+
+JRE (Java Runtime Environment) contains JVM, supporting libraries, and other components to run a Java program. However, it doesn't contain any compiler and debugger.
+
+JDK (Java Development Kit) contains JRE and tools such as compilers and debuggers for developing Java applications.
+
+Built in functions in java are methods that are present in different API of JDK,For example cos(double a), exp(double a)etc are built in function of java present in java,lang.Mathclass.
+
+constructor Returns the function that created this object's instance. By default this is the Number object.
+
+toExponential Forces a number to display in exponential notation, even if the number is in the range in which JavaScript normally uses standard notation.
+
+toFixed Formats a number with a specific number of digits to the right of the decimal.
+
+toLocaleString Returns a string value version of the current number in a format that may vary according to a browser's locale settings.
+
+toPrecision Defines how many total digits (including digits to the left and right of the decimal) to display of a number.
+
+toString Returns the string representation of the number's value.
+
+valueOf Returns the number's value.
+
+Boolean Methods Here is a list of each method and its description.
+
+toSource Returns a string containing the source of the Boolean object; you can use this string to create an equivalent object.
+
+toString Returns a string of either "true" or "false" depending upon the value of the object.
+
+valueOf Returns the primitive value of the Boolean object.
+
+charAt it Returns the character at the specified index.
+
+charCodeAt it Returns a number indicating the Unicode value of the character at the given index.
+
+concat it Combines the text of two strings and returns a new string.
+
+indexOf Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+
+lastIndexOf Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+
+localeCompare Returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.
+
+length Returns the length of the string.
+
+match Used to match a regular expression against a string.
+
+replace Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+
+search Executes the search for a match between a regular expression and a specified string.
+
+slice Extracts a section of a string and returns a new string.
+
+split Splits a String object into an array of strings by separating the string into substrings.
+
+substr Returns the characters in a string beginning at the specified location through the specified number of characters.
+
+substring Returns the characters in a string between two indexes into the string.
+
+toLocaleLowerCase The characters within a string are converted to lower case while respecting the current locale.
+
+toLocaleUpperCase The characters within a string are converted to upper case while respecting the current locale.
+
+toLowerCase Returns the calling string value converted to lower case.
+
+toString() Returns a string representing the specified object.
+
+toUpperCase Returns the calling string value converted to uppercase.
+
+valueOf Returns the primitive value of the specified object.
+
+String HTML wrappers
+
+Here is a list of each method which returns a copy of the string wrapped inside the appropriate HTML tag.
+
+anchor Creates an HTML anchor that is used as a hypertext target.
+
+big Creates a string to be displayed in a big font as if it were in a <big> tag.
+
+blink Creates a string to blink as if it were in a <blink> tag.
+
+bold Creates a string to be displayed as bold as if it were in a <b> tag.
+
+fixed Causes a string to be displayed in fixed-pitch font as if it were in a <tt> tag
+
+fontcolor Causes a string to be displayed in the specified color as if it were in a <font color="color"> tag.
+
+fontsize Causes a string to be displayed in the specified font size as if it were in a <font size="size"> tag.
+
+italics Causes a string to be italic, as if it were in an <i> tag.
+
+link Creates an HTML hypertext link that requests another URL.
+
+small Causes a string to be displayed in a small font, as if it were in a <small> tag.
+
+strike Causes a string to be displayed as struck-out text, as if it were in a <strike> tag.
+
+sub Causes a string to be displayed as a subscript, as if it were in a <sub> tag
+
+sup Causes a string to be displayed as a superscript, as if it were in a <sup> tag
+
+Array Methods
+
+concat Returns a new array comprised of this array joined with other array(s) and/or value(s).
+
+every Returns true if every element in this array satisfies the provided testing function.
+
+filter Creates a new array with all of the elements of this array for which the provided filtering function returns true.
+
+forEach Calls a function for each element in the array.
+
+indexOf Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
+
+join Joins all elements of an array into a string.
+
+lastIndexOf Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
+
+map Creates a new array with the results of calling a provided function on every element in this array.
+
+pop Removes the last element from an array and returns that element.
+
+push Adds one or more elements to the end of an array and returns the new length of the array.
+
+reduce Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.
+
+reduceRight Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.
+
+reverse Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.
+
+shift Removes the first element from an array and returns that element.
+
+slice Extracts a section of an array and returns a new array.
+
+some Returns true if at least one element in this array satisfies the provided testing function.
+
+toSource Represents the source code of an object
+
+sort Sorts the elements of an array.
+
+Two numbers can be added in java by plus operator.
+
+splice Adds and/or removes elements from an array.
+
+toString Returns a string representing the array and its elements.
+
+unshift Adds one or more elements to the front of an array and returns the new length of the array.
+
+Date Methods:
+
+Date Returns today's date and time
+
+getDate Returns the day of the month for the specified date according to local time.
+
+getDay Returns the day of the week for the specified date according to local time.
+
+getFullYear Returns the year of the specified date according to local time.
+
+getHours Returns the hour in the specified date according to local time.
+
+getMilliseconds Returns the milliseconds in the specified date according to local time.
+
+getMinutes Returns the minutes in the specified date according to local time.
+
+getMonth Returns the month in the specified date according to local time.
+
+getSeconds Returns the seconds in the specified date according to local time.
+
+getTime Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+getTimezoneOffset Returns the time-zone offset in minutes for the current locale.
+l
+getUTCDate Returns the day (date) of the month in the specified date according to universal time.
+
+getUTCDay Returns the day of the week in the specified date according to universal time.
+
+getUTCFullYear Returns the year in the specified date according to universal time.
+
+getUTCHours Returns the hours in the specified date according to universal time.
+
+getUTCMilliseconds Returns the milliseconds in the specified date according to universal time.
+
+getUTCMinutes Returns the minutes in the specified date according to universal time.
+
+getUTCMonth Returns the month in the specified date according to universal time.
+
+getUTCSeconds Returns the seconds in the specified date according to universal time.
+
+getYear Deprecated - Returns the year in the specified date according to local time. Use getFullYear instead.
+
+setDate Sets the day of the month for a specified date according to local time.
+
+setFullYear Sets the full year for a specified date according to local time.
+
+setHours Sets the hours for a specified date according to local time.
+
+setMilliseconds Sets the milliseconds for a specified date according to local time.
+
+setMinutes Sets the minutes for a specified date according to local time.
+
+setMonth Sets the month for a specified date according to local time.
+
+setSeconds Sets the seconds for a specified date according to local time.
+
+setTime Sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+setUTCDate Sets the day of the month for a specified date according to universal time.
+
+setUTCFullYear Sets the full year for a specified date according to universal time.
+
+setUTCHours Sets the hour for a specified date according to universal time.
+
+setUTCMilliseconds Sets the milliseconds for a specified date according to universal time.
+
+setUTCMinutes Sets the minutes for a specified date according to universal time.
+
+setUTCMonth Sets the month for a specified date according to universal time.
+
+setUTCSeconds Sets the seconds for a specified date according to universal time.
+
+setYear Deprecated - Sets the year for a specified date according to local time. Use setFullYear instead.
+
+toDateString Returns the "date" portion of the Date as a human-readable string.
+
+toGMTString Deprecated - Converts a date to a string, using the Internet GMT conventions. Use toUTCString instead.
+
+toLocaleDateString Returns the "date" portion of the Date as a string, using the current locale's conventions.
+
+toLocaleFormat Converts a date to a string, using a format string.
+
+toLocaleString Converts a date to a string, using the current locale's conventions.
+
+toLocaleTimeString Returns the "time" portion of the Date as a string, using the current locale's conventions.
+
+toSource Returns a string representing the source for an equivalent Date object; you can use this value to create a new object.
+
+toString Returns a string representing the specified Date object.
+
+toTimeString Returns the "time" portion of the Date as a human-readable string.
+
+toUTCString Converts a date to a string, using the universal time convention.
+
+valueOf Returns the primitive value of a Date object.
